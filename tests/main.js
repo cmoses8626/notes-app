@@ -3,7 +3,7 @@ import assert from "assert";
 describe("app-boilerplate", function () {
   it("package.json has correct name", async function () {
     const { name } = await import("../package.json");
-    assert.strictEqual(name, "short-lnk");
+    assert.strictEqual(name, "app-boilerplate");
   });
 
   if (Meteor.isClient) {
