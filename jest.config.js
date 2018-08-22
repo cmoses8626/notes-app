@@ -8,10 +8,9 @@ module.exports = {
   ],
   modulePaths: [
     '<rootDir>/node_modules/',
-    '<rootDir>/node_modules/jest-meteor-stubs/lib/',
+    '<rootDir>/node_modules/meteor-jest-stubs/lib/',
   ],
   moduleNameMapper: {
-    "meteor/(.*)": "<rootDir>/tests/mocks/$1.js",
     '^(.*):(.*)$': '$1_$2',
   },
   unmockedModulePathPatterns: [

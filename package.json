@@ -1,5 +1,5 @@
 {
-  "name": "app-boilerplate",
+  "name": "Notes app",
   "private": true,
   "scripts": {
     "start": "meteor run",
