@@ -1,5 +1,5 @@
 {
-  "name": "Notes app",
+  "name": "notes-app",
   "private": true,
   "scripts": {
     "start": "meteor run",

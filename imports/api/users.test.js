@@ -1,4 +1,4 @@
-const validateNewUser = require('./users');
+// const validateNewUser = require('./users');
 
 const square = (a) => a * a;
 
@@ -9,16 +9,16 @@ describe('square', function() {
   });
 });
 
-describe('validate new user', function() {
-  it('should allow valid email address', function() {
-    const testUser = {
-      emails: [
-        {
-          address: 'test@example.com'
-        }
-      ]
-    };
-    const res = validateNewUser(testUser);
-    expect(res).toBe(true);
-  });
-});
+// describe('validate new user', function() {
+//   it('should allow valid email address', function() {
+//     const testUser = {
+//       emails: [
+//         {
+//           address: 'test@example.com'
+//         }
+//       ]
+//     };
+//     const res = validateNewUser(testUser);
+//     expect(res).toBe(true);
+//   });
+// });
