@@ -3,9 +3,8 @@
 const square = (a) => a * a;
 
 describe('square', function() {
-  it('should square a number', function() {
-    const res = square(11);
-    expect(res).toBe(121);
+  test('should square a number', () => {
+    expect(square(11)).toBe(121);
   });
 });
 
