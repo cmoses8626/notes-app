@@ -1,23 +1,27 @@
-// const validateNewUser = require('./users');
+import { validateNewUser } from './users';
 
-const square = (a) => a * a;
+describe('validate new user', () => {
+  test('should allow valid email address', () => {
+    let testUser = {
+      emails: [
+        {
+          address: 'test@example.com'
+        }
+      ]
+    };
+    expect(validateNewUser(testUser)).toBe(true);
+  });
 
-describe('square', function() {
-  test('should square a number', () => {
-    expect(square(11)).toBe(121);
+  test('throws on invalid email', () => {
+    let testUser = {
+      emails: [
+        {
+          address: 'test@example'
+        }
+      ]
+    };
+    expect(() => {
+      validateNewUser(testUser);
+    }).toThrow();
   });
 });
-
-// describe('validate new user', function() {
-//   it('should allow valid email address', function() {
-//     const testUser = {
-//       emails: [
-//         {
-//           address: 'test@example.com'
-//         }
-//       ]
-//     };
-//     const res = validateNewUser(testUser);
-//     expect(res).toBe(true);
-//   });
-// });
